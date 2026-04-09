@@ -284,6 +284,10 @@ backend code.
 - However, it struggled with the finer details a bit more with some of bugs I mentioned in question 2 above, especially with the keyboard implementation, I had to ignore some of the proposed solutions for that.
 - This required me to spend a decent amount of time debugging to figure out what features were bugged and what was wrong with them. This required changing my approach to ask more questions about existing features, rather than asking about new ones. Other than that, my approach worked well.
 
+### Running the Code (Windows)
+
+To run this code, most of it should be set up for you already. Make sure to have the most recent version of Node.js/npm and Python installed first. After that, in one terminal, cd into the ``calculator/frontend`` folder, then run ``npm install`` followed by ``npm run dev``. This will boot up the frontend on port 5173. Now, in a second terminal, cd into the ``calculator/backend`` folder, then run ``pip install -r requirements.txt`` followed by ``uvicorn main:app --reload`` to boot the backend server on port 8000. To view and use the calculator, go to ``http://localhost:5173/`` in your web browser. Let me know if you have any issues with with this on your end.
+
 ------------------------------------------------------------------------
 
 # Delivery
